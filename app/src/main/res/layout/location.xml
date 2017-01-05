@@ -1,6 +1,670 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.micheal.tabbedexperiment.Location">
 
-</LinearLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Location_Main_Layout">
+
+        <TextView
+            android:text="@string/L_Header"
+            android:id="@+id/Location_Header"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal' />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c1"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Header">
+
+
+            <TextView
+                android:text="@string/L_1"
+                android:id="@+id/Location_c1"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c1_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c1_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c1_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c1_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c1_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c1_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c1_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c1_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c1_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c1_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c1_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c2"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c1">
+
+
+            <TextView
+                android:text="@string/L_2"
+                android:id="@+id/Location_c2"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c2_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c2_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c2_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c2_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c2_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c2_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c2_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c2_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c2_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c2_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c2_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c3"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c2">
+
+
+            <TextView
+                android:text="@string/L_3"
+                android:id="@+id/Location_c3"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c3_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c3_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c3_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c3_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c3_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c3_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c3_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c3_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c3_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c3_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c3_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c4"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c3">
+
+
+            <TextView
+                android:text="@string/L_4"
+                android:id="@+id/Location_c4"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c4_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c4_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c4_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c4_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c4_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c4_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c4_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c4_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c4_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c4_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c4_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c5"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c4">
+
+
+            <TextView
+                android:text="@string/L_5"
+                android:id="@+id/Location_c5"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c5_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c5" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c5_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c5_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c5_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c5_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c5_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c5_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c5_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c5_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c5_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c5_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c6"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c5">
+
+
+            <TextView
+                android:text="@string/L_6"
+                android:id="@+id/Location_c6"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c6_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c6" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c6_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c6_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c6_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c6_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c6_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c6_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c6_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c6_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c6_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c6_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c7"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c6">
+
+
+            <TextView
+                android:text="@string/L_7"
+                android:id="@+id/Location_c7"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c7_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c7" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c7_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c7_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c7_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c7_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c7_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c7_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c7_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c7_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c7_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c7_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c8"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c7">
+
+
+            <TextView
+                android:text="@string/L_8"
+                android:id="@+id/Location_c8"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c8_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c8" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c8_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c8_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c8_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c8_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c8_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c8_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c8_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c8_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c8_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c8_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Location_Group_c9"
+            percent:layout_widthPercent='100%'
+            percent:layout_heightPercent='@dimen/percent_height_normal'
+            android:layout_below="@id/Location_Group_c8">
+
+
+            <TextView
+                android:text="@string/L_9"
+                android:id="@+id/Location_c9"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Location_Note_c9_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_c9" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c9_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c9_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c9_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c9_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c9_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c9_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c9_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c9_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Location_Note_c9_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Location_Note_c9_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>
