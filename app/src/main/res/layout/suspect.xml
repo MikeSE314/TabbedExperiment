@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/suspect"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.micheal.tabbedexperiment.Suspect">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Main_Layout">
+
+        <TextView
+            android:text="@string/S_Header"
+            android:id="@+id/Suspect_Header"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='22%'/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c1"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Header">
+
+            <TextView
+                android:text="@string/S_1"
+                android:id="@+id/Suspect_c1"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c1_p1"
+                android:inputType="text"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c1"/>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c1_p2"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c1_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c1_p3"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c1_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c1_p4"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c1_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c1_p5"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c1_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c1_p6"
+                android:cursorVisible="true"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c1_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c2"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Group_c1">
+
+            <TextView
+                android:text="@string/S_2"
+                android:id="@+id/Suspect_c2"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c2_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c2_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c2_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c2_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c2_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c2_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c2_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c2_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c2_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c2_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c2_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c3"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Group_c2">
+
+            <TextView
+                android:text="@string/S_3"
+                android:id="@+id/Suspect_c3"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c3_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c3_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c3_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c3_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c3_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c3_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c3_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c3_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c3_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c3_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c3_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c4"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Group_c3">
+
+            <TextView
+                android:text="@string/S_4"
+                android:id="@+id/Suspect_c4"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c4_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c4_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c4_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c4_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c4_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c4_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c4_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c4_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c4_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c4_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c4_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c5"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Group_c4">
+
+            <TextView
+                android:text="@string/S_5"
+                android:id="@+id/Suspect_c5"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c5_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c5" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c5_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c5_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c5_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c5_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c5_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c5_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c5_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c5_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c5_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c5_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/Suspect_Group_c6"
+            android:layout_width="match_parent"
+            percent:layout_heightPercent='13%'
+            android:layout_below="@id/Suspect_Group_c5">
+
+            <TextView
+                android:text="@string/S_6"
+                android:id="@+id/Suspect_c6"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='40%' />
+
+            <EditText
+                android:id="@+id/Suspect_Note_c6_p1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_c6" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c6_p2"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c6_p1" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c6_p3"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c6_p2" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c6_p4"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c6_p3" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c6_p5"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c6_p4" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/Suspect_Note_c6_p6"
+                android:textSize="12sp"
+                android:cursorVisible="true"
+                android:layout_height="match_parent"
+                percent:layout_widthPercent='10%'
+                android:layout_toRightOf="@id/Suspect_Note_c6_p5" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

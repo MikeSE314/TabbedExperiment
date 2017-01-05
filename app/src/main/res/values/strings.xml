@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tabbed Experiment</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="S_Header">Suspect</string>
+    <string name="S_1">Draco Malfoy</string>
+    <string name="S_2">Crabbe &amp; Goyle</string>
+    <string name="S_3">Lucius Malfoy</string>
+    <string name="S_4">Dolores Umbridge</string>
+    <string name="S_5">Peter Pettigrew</string>
+    <string name="S_6">Bellatrix Lestrange</string>
+    <string name="I_Header">Item</string>
+    <string name="I_1">Sleeping Draught</string>
+    <string name="I_2">Vanishing Cabinet</string>
+    <string name="I_3">Portkey</string>
+    <string name="I_4" translatable="false">Impedimenta</string>
+    <string name="I_5" translatable="false">Petrificus Totalus</string>
+    <string name="I_6">Mandrake</string>
+    <string name="L_Header">Location</string>
+    <string name="L_1">Great Hall</string>
+    <string name="L_2">Hospital Wing</string>
+    <string name="L_3">Room of Requirement</string>
+    <string name="L_4">Potions Classroom</string>
+    <string name="L_5">Trophy Room</string>
+    <string name="L_6">Divination Classroom</string>
+    <string name="L_7">Owlery</string>
+    <string name="L_8">Library</string>
+    <string name="L_9">Defense Against Dark Arts</string>
+</resources>
